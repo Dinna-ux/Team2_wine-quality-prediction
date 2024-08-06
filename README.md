@@ -135,38 +135,17 @@ The project includes various metrics for model performance, including accuracy, 
 
 The optimisation process did not prove fruitful with only a slight improvement on the Red wine dataset as shown in the table below. White wine dataset actually declined in performance. This could be due to overfitting, sub optimal hyperparameters or inherent differences within the dataset. The next step would be to perform some more advanced optimisation analysis such as Bayesian Optimisation. 
 
+Dataset	Model	Precision	Recall	F1-Score	Accuracy
+Red Wine Initial	Random Forest	0.8916	0.9000	0.8925	0.9000
+Red Wine Optimized	Random Forest	0.9027	0.9094	0.9020	0.9094
+White Wine Initial	Random Forest	0.8882	0.8908	0.8850	0.8908
+White Wine Optimized	Random Forest	0.8821	0.8857	0.8800	0.8857
 
+Conclusion
 
+This project successfully demonstrated the application of machine learning algorithms to predict wine quality based on chemical properties. The Random Forest Classifier, after hyperparameter tuning, provided the best performance for both red and white wines. These insights can be valuable for wine producers to enhance wine quality and optimize production processes.
 
+Acknowledgements
 
-Dataset
-Model
-Precision
-Recall
-F1-Score
-Accuracy
-Red Wine Initial 
-Random Forest
-0.8916
-0.9000
-0.8925
-0.9000
-Red Wine Optimized
-Random Forest
-0.9027
-0.9094
-0.9020
-0.9094
-White Wine Initial
-Random Forest
-0.8882
-0.8908
-0.8850
-0.8908
-White Wine Optimized
-Random Forest
-0.8821
-0.8857
-0.8800
-0.8857
+We would like to thank Monash University and EdX for providing the platform and resources for this project. Special thanks to our instructors, TAs and mentors for their guidance and support throughout the Data Analytics Boot Camp.
 
