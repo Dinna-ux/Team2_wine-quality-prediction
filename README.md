@@ -48,11 +48,13 @@ White Wine Quality Data: `white_wine_quality.db`
 Heatmap:
 Correlation data show that the strongest positive relationship between red wine quality is alcohol content, followed by sulfates. The strongest negatively correlated component was volatile acidity. 
 Similarly in white wine, alcohol content has the strongest positive correlation followed by PH index. The strongest negatively correlated component was density.
-Figure 1: Red Wine Heatmap
+
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Heatmap%20red%20wine.png)
+                                      Figure 1: Red Wine Heatmap
 
 
- 
-Figure 2: White Wine Heatmap
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Heatmap%20White%20wine.png)
+                                      Figure 2: White Wine Heatmap
 
 
 
@@ -73,7 +75,7 @@ Box Plots were used to find the range of each component of the dataset. Red wine
 
 To avoid overfitting, prior to the model training, each feature was scaled due to the fact that a large value in one variable can dominate over other variables during the training process. 
 
-
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Box%20Plot%20Red%20wine.png)
 Figure 4: Boxplots for each component range Red wine
 
 
@@ -81,7 +83,7 @@ Figure 4: Boxplots for each component range Red wine
 
 
 
-
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Box%20plot%20white%20wine.png)
 Figure 5: Boxplots for each component range White wine
 
 
@@ -99,26 +101,9 @@ The script ‘Machine_Learning_Models’ evaluates 15 different Machine learning
 Random Forest Classifier was an obvious choice as it is known to be one of the stronger models for categorical data. A high precision value was considered favorable as a False Positive prediction would be detrimental to our business. The case where we have manufactured and priced a poor quality wine as a high quality wine was considered to be the most determining factor as this would lead to poor brand image and low customer retention.
 
  From here, the script ‘RandomForrestClassifier_Optimised’  trains the Random Forest Classifier and performs hyperparameter tuning using GridSearchCV. It also evaluates and compares the performance of the initial and optimized models.
+ 
 
-
-Logistic Regression
-Linear Discriminant Analysis
-Support Vector Machine
-
-
-DecisionTreeClassifier
-RandomForestClassifier
-Gradient Boosting Classifier
-AdaBoostClassifier
-Bagging Classifier
-K-Nearest Neighbors
-Gaussian Naive Bayes
-Quadratic Discriminant Analysis
-Multilayer Perceptron
-RidgeClassifier
-Extra Trees Classifier
-Isolation Forest
-
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/models%20tested.PNG)
 Table 1: ML models Tested
 
 
@@ -135,11 +120,8 @@ The project includes various metrics for model performance, including accuracy, 
 
 The optimisation process did not prove fruitful with only a slight improvement on the Red wine dataset as shown in the table below. White wine dataset actually declined in performance. This could be due to overfitting, sub optimal hyperparameters or inherent differences within the dataset. The next step would be to perform some more advanced optimisation analysis such as Bayesian Optimisation. 
 
-Dataset	Model	Precision	Recall	F1-Score	Accuracy
-Red Wine Initial	Random Forest	0.8916	0.9000	0.8925	0.9000
-Red Wine Optimized	Random Forest	0.9027	0.9094	0.9020	0.9094
-White Wine Initial	Random Forest	0.8882	0.8908	0.8850	0.8908
-White Wine Optimized	Random Forest	0.8821	0.8857	0.8800	0.8857
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/results%20table.PNG)
+Table 2: Initial and Optimised Results from Random Forest Classifier
 
 # Conclusion
 
