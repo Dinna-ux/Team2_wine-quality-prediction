@@ -49,11 +49,11 @@ Heatmap:
 Correlation data show that the strongest positive relationship between red wine quality is alcohol content, followed by sulfates. The strongest negatively correlated component was volatile acidity. 
 Similarly in white wine, alcohol content has the strongest positive correlation followed by PH index. The strongest negatively correlated component was density.
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Heatmap%20red%20wine.png)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/Heatmap%20red%20wine.png)
                                       Figure 1: Red Wine Heatmap
 
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Heatmap%20White%20wine.png)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/Heatmap%20White%20wine.png)
                                       Figure 2: White Wine Heatmap
 
 
@@ -75,7 +75,7 @@ Box Plots were used to find the range of each component of the dataset. Red wine
 
 To avoid overfitting, prior to the model training, each feature was scaled due to the fact that a large value in one variable can dominate over other variables during the training process. 
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Box%20Plot%20Red%20wine.png)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/Box%20Plot%20Red%20wine.png)
 Figure 4: Boxplots for each component range Red wine
 
 
@@ -83,7 +83,7 @@ Figure 4: Boxplots for each component range Red wine
 
 
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Box%20plot%20white%20wine.png)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/Box%20plot%20white%20wine.png)
 Figure 5: Boxplots for each component range White wine
 
 
@@ -103,7 +103,7 @@ Random Forest Classifier was an obvious choice as it is known to be one of the s
  From here, the script ‘RandomForrestClassifier_Optimised’  trains the Random Forest Classifier and performs hyperparameter tuning using GridSearchCV. It also evaluates and compares the performance of the initial and optimized models.
  
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/models%20tested.PNG)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/models%20tested.PNG)
 Table 1: ML models Tested
 
 
@@ -120,7 +120,7 @@ The project includes various metrics for model performance, including accuracy, 
 
 The optimisation process did not prove fruitful with only a slight improvement on the Red wine dataset as shown in the table below. White wine dataset actually declined in performance. This could be due to overfitting, sub optimal hyperparameters or inherent differences within the dataset. The next step would be to perform some more advanced optimisation analysis such as Bayesian Optimisation. 
 
-![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/results%20table.PNG)
+![alt text](https://github.com/Dinna-ux/Team2_wine-quality-prediction/blob/main/Images/results%20table.PNG)
 Table 2: Initial and Optimised Results from Random Forest Classifier
 
 # Conclusion
